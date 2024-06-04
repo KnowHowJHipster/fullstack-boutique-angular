@@ -50,6 +50,14 @@ public class CacheConfiguration {
             createCache(cm, org.iqkv.boutique.domain.User.class.getName());
             createCache(cm, org.iqkv.boutique.domain.Authority.class.getName());
             createCache(cm, org.iqkv.boutique.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.iqkv.boutique.domain.Product.class.getName());
+            createCache(cm, org.iqkv.boutique.domain.ProductCategory.class.getName());
+            createCache(cm, org.iqkv.boutique.domain.ProductCategory.class.getName() + ".products");
+            createCache(cm, org.iqkv.boutique.domain.CustomerDetails.class.getName());
+            createCache(cm, org.iqkv.boutique.domain.CustomerDetails.class.getName() + ".carts");
+            createCache(cm, org.iqkv.boutique.domain.ShoppingCart.class.getName());
+            createCache(cm, org.iqkv.boutique.domain.ShoppingCart.class.getName() + ".orders");
+            createCache(cm, org.iqkv.boutique.domain.ProductOrder.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
